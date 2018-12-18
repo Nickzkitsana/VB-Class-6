@@ -27,12 +27,12 @@ Partial Class Form1
         Me.lbltime = New System.Windows.Forms.Label()
         Me.btnAnswer = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblCharStart = New System.Windows.Forms.Label()
+        Me.lblLength = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtguess = New System.Windows.Forms.TextBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
@@ -50,10 +50,12 @@ Partial Class Form1
         '
         Me.lbltime.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lbltime.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbltime.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.lbltime.Location = New System.Drawing.Point(149, 50)
         Me.lbltime.Name = "lbltime"
         Me.lbltime.Size = New System.Drawing.Size(216, 44)
         Me.lbltime.TabIndex = 1
+        Me.lbltime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnAnswer
         '
@@ -75,23 +77,27 @@ Partial Class Form1
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Hint: Start with"
         '
-        'Label2
+        'lblCharStart
         '
-        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label2.Location = New System.Drawing.Point(149, 129)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 30)
-        Me.Label2.TabIndex = 4
+        Me.lblCharStart.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblCharStart.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblCharStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lblCharStart.Location = New System.Drawing.Point(149, 129)
+        Me.lblCharStart.Name = "lblCharStart"
+        Me.lblCharStart.Size = New System.Drawing.Size(51, 30)
+        Me.lblCharStart.TabIndex = 4
+        Me.lblCharStart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label3
+        'lblLength
         '
-        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label3.Location = New System.Drawing.Point(258, 129)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(54, 30)
-        Me.Label3.TabIndex = 5
+        Me.lblLength.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblLength.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblLength.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lblLength.Location = New System.Drawing.Point(258, 129)
+        Me.lblLength.Name = "lblLength"
+        Me.lblLength.Size = New System.Drawing.Size(54, 30)
+        Me.lblLength.TabIndex = 5
+        Me.lblLength.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label4
         '
@@ -123,12 +129,12 @@ Partial Class Form1
         Me.Label6.TabIndex = 8
         Me.Label6.Text = "Guess Word"
         '
-        'TextBox1
+        'txtguess
         '
-        Me.TextBox1.Location = New System.Drawing.Point(148, 199)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(216, 20)
-        Me.TextBox1.TabIndex = 9
+        Me.txtguess.Location = New System.Drawing.Point(148, 199)
+        Me.txtguess.Name = "txtguess"
+        Me.txtguess.Size = New System.Drawing.Size(216, 20)
+        Me.txtguess.TabIndex = 9
         '
         'Timer1
         '
@@ -139,12 +145,12 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(397, 327)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtguess)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblLength)
+        Me.Controls.Add(Me.lblCharStart)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnAnswer)
         Me.Controls.Add(Me.lbltime)
@@ -160,11 +166,11 @@ Partial Class Form1
     Friend WithEvents lbltime As Label
     Friend WithEvents btnAnswer As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents lblCharStart As Label
+    Friend WithEvents lblLength As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtguess As TextBox
     Friend WithEvents Timer1 As Timer
 End Class
