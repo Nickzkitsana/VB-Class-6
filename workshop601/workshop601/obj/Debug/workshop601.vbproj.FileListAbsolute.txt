@@ -1,0 +1,11 @@
+C:\Users\Lenovo\Source\Repos\VB-Class6\workshop601\workshop601\bin\Debug\workshop601.exe.config
+C:\Users\Lenovo\Source\Repos\VB-Class6\workshop601\workshop601\bin\Debug\workshop601.exe
+C:\Users\Lenovo\Source\Repos\VB-Class6\workshop601\workshop601\bin\Debug\workshop601.pdb
+C:\Users\Lenovo\Source\Repos\VB-Class6\workshop601\workshop601\bin\Debug\workshop601.xml
+C:\Users\Lenovo\Source\Repos\VB-Class6\workshop601\workshop601\obj\Debug\workshop601.Form1.resources
+C:\Users\Lenovo\Source\Repos\VB-Class6\workshop601\workshop601\obj\Debug\workshop601.Resources.resources
+C:\Users\Lenovo\Source\Repos\VB-Class6\workshop601\workshop601\obj\Debug\workshop601.vbproj.GenerateResource.Cache
+C:\Users\Lenovo\Source\Repos\VB-Class6\workshop601\workshop601\obj\Debug\workshop601.vbproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Source\Repos\VB-Class6\workshop601\workshop601\obj\Debug\workshop601.exe
+C:\Users\Lenovo\Source\Repos\VB-Class6\workshop601\workshop601\obj\Debug\workshop601.xml
+C:\Users\Lenovo\Source\Repos\VB-Class6\workshop601\workshop601\obj\Debug\workshop601.pdb
