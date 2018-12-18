@@ -23,15 +23,11 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lblTime = New System.Windows.Forms.Label()
         Me.btnStart = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
-        '
-        'Timer1
-        '
-        Me.Timer1.Interval = 1000
         '
         'lblTime
         '
@@ -65,6 +61,10 @@ Partial Class Form1
         Me.Button1.Text = "Stop"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1000
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -78,9 +78,8 @@ Partial Class Form1
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents Timer1 As Timer
     Friend WithEvents lblTime As Label
     Friend WithEvents btnStart As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents Timer1 As Timer
 End Class
